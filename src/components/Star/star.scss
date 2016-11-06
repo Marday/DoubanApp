@@ -1,0 +1,43 @@
+.star{
+	display:inline-block;
+	width:90px;
+	height:20px;
+	position:relative;
+	color:#C9C2C2;
+	span{
+		font-size:16px;
+		margin-left:2px;
+	}
+	.star-pos{
+		position:absolute;
+		left:0;
+		top:0;
+		height:20px;
+		overflow:hidden;
+		white-space: nowrap;
+		margin-left:-2px
+	}
+	.light-star{
+		color:#F3EC0A;
+	}
+	.score{
+		margin-left:100px;
+		font-size:16px;
+		color:#777
+	}
+	&.big{
+		height:24px;
+		span{
+			font-size:20px
+		}
+		.score{
+			margin-left:115px;
+			font-size:20px;
+			color:#fff;
+			font-family:"microsoft YaHei"
+		}
+		.star-pos{
+			height:24px
+		}
+	}
+}

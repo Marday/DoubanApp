@@ -1,0 +1,29 @@
+.movie-show-item{
+	position:relative;
+	color:#fff;
+	white-space:nowrap;
+	.movie-show-bg{
+		background-size:120%;
+		background-position:-20px -30px;
+		height:200px;
+		filter:blur(4px);
+	}
+	.movie-show-img{
+		position:absolute;
+		top:30px;
+		left:10px;
+		border:2px solid #fff;
+	}
+	.movie-show-des{
+		position:absolute;
+		top: 35px;
+		left: 130px;
+		right:20px;
+		overflow:hidden;
+		p,h3{
+			overflow:hidden;
+			text-overflow:ellipsis;
+			margin:5px 0 ;
+		}
+	}
+}

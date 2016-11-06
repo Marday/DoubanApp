@@ -1,0 +1,27 @@
+.movie-summary{
+	font-size:25px;
+	padding: 15px;
+	h2{
+		color:#105068;
+	}
+	p{
+		margin:15px 0;
+		font-size:20px;
+		color:#678;
+	}
+}
+.movie-show-divider{
+	color:#fff;
+	font-size:20px;
+	background-color:#517987;
+}
+.movie-team{
+	display:flex;
+	padding:15px;
+	box-sizing:border-box;
+	.movie-person{
+		text-align:center;
+		flex-grow:1;
+		width:86px;
+	}
+}

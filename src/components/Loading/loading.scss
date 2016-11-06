@@ -1,0 +1,29 @@
+
+.movie-wrap-loading{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	.loading-wrap{
+		width:60px;
+		height:60px;
+		border-radius:15px;
+		background-color:#939497;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		.loading{
+			width:37px;
+			height:37px;
+			animation: load 1s steps(12) infinite;
+		}
+	}
+}
+@keyframes load {
+	from {background-position: 0 0;}
+	to {background-position:-444px 0;}
+}

@@ -1,0 +1,153 @@
+body{width:100%;}
+*{padding:0;margin:0}
+//首页展示
+.homePage{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:9;
+	background-color:#fafafa;
+	transition: all ease 1s;
+}
+.homePage.show{
+	transform:translateX(80%)
+}
+
+.section{
+	width:100%;
+	box-sizing:border-box;
+	padding:0px 10px 0 5px;
+	
+}
+.movie-box-item{
+	width:33%;
+	height:46.2vw;
+	display:inline-block;
+	position:relative;
+	box-sizing:border-box;
+	padding-left:5px;
+	margin-bottom:5px;
+	.movie-box-head{
+	  position:relative;
+		width:100%;
+		height:100%;
+	}
+	img{
+		width:100%;
+		height:100%;
+	}
+	p{
+		position:absolute;
+		bottom:0px;
+		white-space:nowrap;
+		text-align:center;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		color:#fff;
+		width:100%;
+		line-height:30px;
+		font-size:14px;
+		background:rgba(0,0,0,0.5);
+
+	}
+}
+.movie-box-wrap{
+	list-style:none;
+	margin-bottom:25px;
+}
+.movie-box-sort{
+	position:relative;
+	h3{
+		display:inline-block;
+		line-height:40px;
+		font-weight:normal;
+	}
+	span{
+		position:absolute;
+		right:20px;
+		line-height:40px;
+		font-size:14px;
+		color:#678;
+	}
+	&:before,&:after{
+		position:absolute;
+		content:"";
+		border: solid transparent;
+		height:0;
+		width:0;
+		
+	}
+	&:before{
+		border-width:8px;
+		border-left-color:#B1B2B3;
+		top:12px;
+		right:0;
+	}
+	&:after{
+		border-width: 6px;
+		border-left-color: #f6f6f6;
+		top:14px;
+		right:5px;
+	}
+}
+//侧边栏样式
+.side-bar{
+	position:fixed;
+	height:100%;
+	right:20%;
+	left:0;
+	top:0;
+	background-color:#1D1B1B;
+	color:#fff;
+	.side-bar-site{
+		overflow:hidden;
+		padding:10px;
+		h2{
+			float:left;
+			font-size:30px;
+			font-weight:border
+		}
+		div{
+			float:right;
+			margin-top:-px;
+			font-size: 30px;
+			margin: 0 10px 0 0;
+		}
+	}
+	.ipt{
+		margin:10px 0 0 8px;
+		background:#747171;
+		width:210px;
+		border-radius:8px;
+		span{
+			font-size:16px;
+			color:#111;
+			margin-left:10px
+		}
+		input{
+			margin-left:5px;
+			height:30px;
+			background:none;
+			border:0;
+			outline:none;
+
+		}
+	}
+	i{
+		display:inline-block;
+		height:20px;
+		width:100%;
+		margin-top:20px;
+		background-color:#312E2E
+	}
+	ul{
+		padding:14px;
+		font-size:24px;
+		li{
+			padding:10px 0;
+			border-bottom:1px solid #272626;
+			color:#fff;
+		}
+	}
+}

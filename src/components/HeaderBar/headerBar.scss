@@ -1,0 +1,45 @@
+.ui-component-header {
+	position:fixed;
+	top: 0;
+	left: 0;
+	background-color:#2E738D;
+	height: 45px;
+	width: 100%;
+	box-sizing:box-sizing;
+	z-index: 9;
+	color:#fff;
+	.header-menu-left {
+		width:45px;
+		height:45px;
+		box-sizing:border-box;
+		position:absolute;
+		padding:10px;
+		div{
+			width:20px;
+			height:2px;
+			background-color:#fff;
+			margin: 5px 8px;
+		}
+	}
+	span{
+		width:30px;
+		height:30px;
+		line-height:30px;
+		text-align:center
+	}
+	p{
+		text-align: center;
+		line-height: 45px;
+		font-size: 19px;
+		color: #fff
+	}
+	.header-menu-right{
+		position:absolute;
+		right:15px;
+		top:10px;
+		background:none;
+		border:none;
+		font-size:25px;
+		color:#fff
+	}
+}
